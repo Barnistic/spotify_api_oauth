@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{{url_for('top_items')}}" method="post">
+        <fieldset>
+            <legend>Select which top items to display</legend>
+            <select name="type" id="type">
+                <option value="artists">Artists</option>
+                <option value="tracks">Tracks</option>
+            </select>
+            <select name="time_range" id="time_range">
+                <option value="short_term">Short term</option>
+                <option value="medium_term">Medium term</option>
+                <option value="long_term">Long term</option>
+            </select>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
